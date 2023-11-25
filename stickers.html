@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compra de Stickers</title>
+    <link rel="stylesheet" href="./assets/css/stickers.css" />
+  </head>
+  <body>
+    <div id="title">
+      <h1>Stickers del Señor de los anillos</h1>
+      <p>Puedes llevar hasta 10 stickers</p>
+    </div>
+
+    <div id="container">
+      <div id="img-input">
+        <img id="img-1" src="assets/imgs/1.png" alt="" />
+        <input id="input-1" type="text" />
+      </div>
+      <div id="img-input">
+        <img id="img-2" src="assets/imgs/2.png" alt="" />
+        <input id="input-2" type="text" />
+      </div>
+      <div id="img-input">
+        <img id="img-3" src="assets/imgs/3.png" alt="" />
+        <input id="input-3" type="text" />
+      </div>
+    </div>
+
+    <div id="message-button">
+      <p id="message"></p>
+      <button
+        onclick="
+      cant1 = document.querySelector('#input-1').value
+      cant2 = document.querySelector('#input-2').value
+      cant3 = document.querySelector('#input-3').value
+      suma = Number(cant1) + Number(cant2) + Number(cant3)
+      if (suma <= 10){
+        message = document.querySelector('#message')
+        message.innerHTML = 'Llevas '+ suma + ' Stickers'
+      }else{
+        message.innerHTML = 'Llevas demasiados stickers'
+      }
+      "
+      >
+        Verificar
+      </button>
+    </div>
+
+    <div id="pages">
+      <p id="lastPage">
+        <a href="index1.htm">Volver a la pagina anterior</a>
+      </p>
+      <p id="nextPage"><a href="index3.html">Pasar a la siguente pagina</a></p>
+    </div>
+  </body>
+</html>

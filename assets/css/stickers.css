@@ -1,0 +1,88 @@
+body {
+    background-color: rgb(142, 126, 97);
+}
+#title {
+    text-align: center;
+    margin: 64px;
+}
+#title h1 {
+    font-size: 56px; 
+}
+#title p {
+    font-size: 24px; 
+}
+#container {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    justify-content: space-evenly;
+    margin-left: 10%;
+    margin-right: 10%
+    ;
+}
+#img-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+input {
+    width: 50px;
+    height: 50px;
+    margin-top: 24px;
+    border-radius: 50px;
+    text-align: center;
+    border: solid 5px gold;
+    font-size: 24px;
+}
+#container img {
+    width: 300px;
+    border-radius: 24px;
+}
+#message-button {
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+    align-items: center;
+}
+#message{
+    text-align: center;
+    margin: 16px;
+    font-size: 24px;
+}
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    font-size: 16px;
+    border: solid 5px rgb(205, 177, 19);
+    transition: background-color 1s ;
+}
+button:hover {
+    background-color: rgb(142, 126, 97);
+    border: solid 12px rgb(239, 209, 36);
+
+}
+#pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#lastPage {
+    text-align: left;
+    margin-left: 50px;
+}
+#lastPage a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+#nextPage {
+    text-align: right;
+    margin-right: 50px;
+}
+#nextPage a {
+    text-decoration: none;
+    color: white;
+font-size: 24px;
+}
