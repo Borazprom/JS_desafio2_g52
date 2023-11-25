@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bordear imagen</title>
+    <link rel="stylesheet" href="./assets/css/style1.css" />
+  </head>
+  <body>
+    <h1>Reforma protestante</h1>
+    <div>
+      <img onclick="
+        imagen = document.querySelector('#img');
+        if(!imagen.style.border){
+            imagen.style.border = '2px solid red'
+        }else {
+            imagen.style.border = ''
+        }
+        " 
+        id="img" src="assets/imgs/ee2f44a3878be2426aa28abf18e581d6.jpg" alt="imagen"/>
+      </button>
+    </div>
+    <p id="nextPage"><a href="index2.html">Pasar a la siguente pagina</a></p>
+  </body>
+</html>
